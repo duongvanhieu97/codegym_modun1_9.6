@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="result" value="">
+<table>
+    <tr>
+        <td>
+            <button value="1" onclick="num1()">1</button>
+        </td>
+        <td>
+            <button onclick="num2()">2</button>
+        </td>
+        <td>
+            <button onclick="num3()">3</button>
+        </td>
+        <td>
+            <button onclick="numadd()">+</button>
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <button onclick="num4()">4</button>
+        </td>
+        <td>
+            <button onclick="num5()">5</button>
+        </td>
+        <td>
+            <button onclick="num6()">6</button>
+        </td>
+        <td>
+            <button onclick="numsub()">-</button>
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <button onclick="num7()">7</button>
+        </td>
+        <td>
+            <button onclick="num8()">8</button>
+        </td>
+        <td>
+            <button onclick="num9()">9</button>
+        </td>
+        <td>
+            <button onclick="nummul()">x</button>
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <button onclick="numc()">C</button>
+        </td>
+        <td>
+            <button onclick="num0()">0</button>
+        </td>
+        <td>
+            <button onclick="numeqa()">=</button>
+        </td>
+        <td>
+            <button onclick="numdiv()">/</button>
+        </td>
+
+    </tr>
+</table>
+<script>
+    let p = document.getElementById("result");
+
+    function num1() {
+        p.value = p.value + "1"
+    }
+
+    function num2() {
+        p.value = p.value + "2"
+    }
+
+    function num3() {
+        p.value = p.value + "3"
+    }
+
+    function num4() {
+        p.value = p.value + "4"
+    }
+
+    function num5() {
+        p.value = p.value + "5"
+    }
+
+    function num6() {
+        p.value = p.value + "6"
+    }
+
+    function num7() {
+        p.value = p.value + "7"
+    }
+
+    function num8() {
+        p.value = p.value + "8"
+    }
+
+    function num9() {
+        p.value = p.value + "9"
+    }
+
+    function num0() {
+        p.value = p.value + "0"
+    }
+
+    function numadd() {
+        p.value = p.value + "+"
+    }
+
+    function numsub() {
+        p.value = p.value + "-"
+    }
+
+    function nummul() {
+        p.value = p.value + "*"
+    }
+
+    function numdiv() {
+        p.value = p.value + "/"
+    }
+
+    function numeqa() {
+        p.value = eval(p.value)
+    }
+
+    function numc() {
+        p.value = ""
+    }
+
+</script>
+</body>
+</html>
